@@ -7,7 +7,7 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="text-white">
+<body class="text-white font-roboto">
     <section id="hero" class="relative flex justify-center">
         <div id="main" class="container h-screen flex flex-col justify-between mx-4">
             <header class="mt-5">
@@ -71,6 +71,28 @@
         </div>
         <img src="/static/bg-image-main-screen.png" class="top-0 -z-10 absolute w-full h-screen object-cover" alt="bg-img">
 
+    </section>
+    <section id="newsletter" class="relative flex justify-center">
+        <div id="main" class="relative container h-screen flex justify-end items-center mx-4 overflow-hidden">
+            <div id="skull" class="absolute -left-20 lg:left-20 h-5/6 lg:h-4/6 flex -z-10">
+                <img src="/static/skull-new 1.png" alt="">
+            </div>
+            <div id="newsletter-content" class="flex flex-col max-w-3xl">
+                <div class="w-2/3 lg:w-full flex flex-col self-end justify-end">
+                    <h3 class="mb-2 uppercase font-bold text-xl lg:text-2xl leading-5 lg:leading-6 lg:tracking-[2px] ">Want to stay in touch?</h3>
+                    <h2 class="uppercase font-bold text-3xl leading-8 tracking-[3px] lg:text-5xl lg:leading-[60px]">Newsletter subscribe </h2>
+                    <p class="my-4 lg:my-12 text-sm lg:text-xl font-roboto leading-5">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+                </div>
+                <div id="buttons" class="ml-4 lg:ml-0 flex flex-col lg:flex-row gap-4">
+                    <label for="newsletter-input" class="px-4 lg:px-5 py-2 w-full flex flex-col rounded-md border-2 cursor-pointer border-gray-800 opacity-80 bg-gray-800 backdrop-blur-sm">
+                        <span class="text-xs lg:text-sm text-gray-500">Your email address</span>
+                        <input id="newsletter-input" class="bg-transparent text-sm lg:text-lg outline-none text-[#FFB548] placeholder:text-[#FFB548]" placeholder="asgarovasgar28@gmail.com" type="text">
+                    </label>
+                    <button class="font-sans w-full py-4 text-black text-sm lg:text-lg leading-5 font-bold rounded-md text-center bg-[#FFB548]">Subcribe now</button>
+                </div>
+            </div>
+        </div>
+        <img src="/static/bg-image-newsletter.png" class="left-0 top-0 -z-20 absolute w-full h-screen object-cover">
     </section>
 </body>
 </html>
