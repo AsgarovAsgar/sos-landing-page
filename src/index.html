@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="text-white">
+    <section id="hero" class="relative flex justify-center">
+        <div id="main" class="container h-screen flex flex-col justify-between mx-4">
+            <header class="mt-5">
+                <div class="flex justify-between items-center">
+                    <a href="#">
+                        <img class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" src="/static/logo.png" alt="">
+                    </a>
+                    <nav class="hidden lg:flex gap-6 uppercase font-bold text-xs leading-4 tracking-[1px]">
+                        <a href="">Main</a>
+                        <a href="">About</a>
+                        <a href="">Game Features</a>
+                        <a href="">System Requirements</a>
+                        <a href="">Quotes</a>
+                    </nav>
+                    <div id="external-buttons" class="hidden lg:block space-x-4">
+                        <button>
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5514 3.28815C12.1356 3.90936 13.667 4.72984 15.1104 5.73198C15.2747 5.84333 15.4625 5.90194 15.6502 5.90194C15.838 5.90194 16.0257 5.84333 16.19 5.73198C17.6334 4.72984 19.1648 3.9035 20.7491 3.28229C21.107 3.14163 21.3476 2.79 21.3417 2.40321C21.3417 2.01641 21.1011 1.67064 20.7373 1.53585C17.5689 0.334444 13.7315 0.334444 10.569 1.53585C10.211 1.67064 9.9646 2.02227 9.9646 2.40321C9.9646 2.78414 10.1876 3.14749 10.5514 3.28815Z" fill="#FFB548"/>
+                                <path d="M24.1587 3.29347C23.8594 3.08835 23.478 3.07077 23.1553 3.25244C21.4009 4.26045 19.7052 5.41497 18.1034 6.68671C17.8922 6.85666 17.7631 7.10866 17.7513 7.37825C17.7396 7.64783 17.8452 7.91156 18.0388 8.09909C21.3599 11.2579 25.96 20.9453 27.0162 25.3993C24.7278 21.5314 19.6231 12.43 16.2845 9.31808C15.9265 8.98403 15.3633 8.98403 15.0053 9.31808C11.6608 12.43 6.5737 21.5373 4.28536 25.4111C5.34152 20.9571 9.92992 11.2579 13.2509 8.09909C13.4504 7.91156 13.5561 7.64783 13.5443 7.37825C13.5326 7.10866 13.4035 6.85666 13.1923 6.68671C11.5904 5.41497 9.88885 4.26045 8.14033 3.25244C7.82935 3.07077 7.43622 3.08835 7.13698 3.29347C3.05905 6.10066 0.624023 10.7129 0.624023 15.6357C0.624023 19.2341 1.92075 22.7035 4.28536 25.4111C7.11351 28.7281 11.2501 30.6386 15.6449 30.6386C20.0397 30.6386 24.1822 28.734 27.0162 25.4052C29.369 22.7094 30.6658 19.2399 30.6658 15.6357C30.6658 10.7129 28.2307 6.10066 24.1587 3.29347Z" fill="#FFB548"/>
+                            </svg>                                         
+                        </button>
+                        <button>
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7746 30.6386C24.0936 30.6386 30.8375 23.9229 30.8375 15.6386C30.8375 7.35434 24.0936 0.638611 15.7746 0.638611C7.45558 0.638611 0.71167 7.35434 0.71167 15.6386C0.71167 17.1666 0.941106 18.6413 1.36754 20.0303C1.47636 20.0498 1.6523 20.0944 1.90866 20.1692L1.50834 13.8967C1.50834 13.7817 1.7031 13.7264 1.88153 13.6757C1.97946 13.6479 2.07247 13.6215 2.12567 13.5874C2.27094 13.4959 5.26258 14.5837 5.42239 14.6559L9.248 16.3792C10.2359 15.7582 11.4175 15.5079 12.5797 15.6764L16.0566 11.4549C16.1002 8.08545 18.8604 5.37061 22.2551 5.3658C25.4269 5.39949 28.0564 7.80626 28.3567 10.9399C28.6763 14.3286 26.1775 17.3323 22.7684 17.6548L16.9767 21.7704C16.6232 23.5754 15.3254 25.0532 13.5724 25.6404C10.8848 26.5454 7.96472 25.111 7.05917 22.4346L5.04467 21.7704C4.89531 21.7231 2.15386 20.5874 1.41129 20.1703C3.34051 26.2396 9.04168 30.6386 15.7746 30.6386ZM25.3546 11.527C25.3546 13.2284 23.967 14.6077 22.2553 14.6077C20.5436 14.6077 19.156 13.2284 19.156 11.527C19.156 9.82564 20.5436 8.44637 22.2553 8.44637C23.967 8.44637 25.3546 9.82564 25.3546 11.527ZM24.3236 11.5271C24.3236 12.6622 23.3978 13.5824 22.2557 13.5824C21.1137 13.5824 20.1879 12.6622 20.1879 11.5271C20.1879 10.3919 21.1137 9.47168 22.2557 9.47168C23.3978 9.47168 24.3236 10.3919 24.3236 11.5271ZM10.5804 23.5417C10.9969 23.7439 11.4569 23.8498 11.9218 23.8498C12.2753 23.8498 12.6191 23.792 12.9581 23.6813C13.7377 23.4118 14.3721 22.8486 14.7304 22.1121C15.4761 20.5766 14.8272 18.7378 13.2873 17.9965C13.0259 17.8714 12.7208 17.9773 12.5949 18.2324C12.469 18.4923 12.5755 18.7956 12.8322 18.9207C12.8661 18.9352 12.9 18.9496 12.9338 18.9689C13.9508 19.4887 14.343 20.7258 13.82 21.7367C13.297 22.7475 12.0477 23.1374 11.0356 22.6175C10.7741 22.4924 10.469 22.5983 10.3431 22.8534C10.2172 23.1133 10.3238 23.4166 10.5804 23.5417Z" fill="#FFB548"/>
+                            </svg>                                
+                        </button>
+                    </div>
+                    <button id="mobile-menu" class="block md:hidden">
+                        <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="9.49854" y="15.0166" width="14.585" height="2.5" rx="1.25" fill="white"/>
+                            <rect x="0.596191" y="7.51657" width="23.4873" height="2.5" rx="1.25" fill="white"/>
+                            <rect x="0.596191" y="0.016571" width="23.4873" height="2.5" rx="1.25" fill="white"/>
+                        </svg>      
+                    </button>
+                </div>
+            </header>
+            <div id="hero-content" class="flex flex-col items-center font-roboto gap-2 lg:gap-4">
+                <h1 class="text-3xl font-semibold tracking-[2px] lg:font-bold lg:text-7xl">SURVIVE AT ALL COSTS</h1>
+                <h2 class="text-lg text-center font-semibold uppercase tracking-[2px] lg:font-bold lg:text-2xl lg:leading-6">Experience new social battle royale game</h2>
+                <button class="mt-2 py-3 lg:py-5 px-4 lg:px-12 tracking-[1px] rounded-[3px] text-black text-sm lg:text-base lg:leading-5 font-bold font-roboto bg-[#FFB548]">Buy Now on Steam<span class="lg:hidden"> | $14.99</span></button>
+            </div>
+            <div id="add-buttons" class="mb-12 flex justify-between lg:justify-center items-center">
+                <button class="flex flex-col items-center gap-1">
+                    <span class="text-xs font-bold text-center leading-5 uppercase">The story</span>
+                    <svg width="23" height="11" viewBox="0 0 23 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3814 1.4458H1.12695L11.1408 9.61492L21.3814 1.4458Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </button>
+                <div id="banners" class="lg:hidden">
+                    <svg width="135" height="12" viewBox="0 0 135 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M134.059 5.98751L129.358 2.42911V5.98751V9.23021L134.059 5.98751Z" fill="white"/>
+                        <path d="M92.4253 5.98751H129.358M129.358 2.42911L134.059 5.98751L129.358 9.23021V2.42911Z" stroke="white" stroke-width="1.19824" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="74.796" cy="5.82965" r="5.20026" stroke="white" stroke-width="0.97049"/>
+                        <circle cx="51.9664" cy="5.82965" r="5.20026" stroke="white" stroke-width="0.97049"/>
+                        <circle cx="29.1368" cy="5.82965" r="5.20026" stroke="white" stroke-width="0.97049"/>
+                        <circle cx="6.30768" cy="5.82965" r="5.20026" fill="white" stroke="white" stroke-width="0.97049"/>
+                        </svg>
+                        
+                </div>
+            </div>
+        </div>
+        <img src="/static/bg-image-main-screen.png" class="top-0 -z-10 absolute w-full h-screen object-cover" alt="bg-img">
+
+    </section>
+</body>
+</html>
